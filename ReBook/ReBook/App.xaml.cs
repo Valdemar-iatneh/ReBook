@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReBook.Pages;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace ReBook
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Test();
         }
 
         protected override void OnStart()
