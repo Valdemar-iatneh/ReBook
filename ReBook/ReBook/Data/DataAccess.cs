@@ -17,5 +17,13 @@ namespace ReBook.Data
         {
             return database.Insert(book);
         }
+        public List<Book> GetBooks()
+        {
+            return database.Table<Book>().ToList();
+        }
+        public int DeleteAllBooks()
+        {
+            return database.DeleteAll<Book>();
+        }
     }
 }

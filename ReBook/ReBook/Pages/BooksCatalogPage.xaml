@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReBook.Pages.BooksCatalogPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="0">
+         
+            <FlexLayout x:Name="filter" Wrap="Wrap" Margin="10" AlignItems="Center"/>
+            <ListView x:Name="LVBooks"
+                      ItemsSource="{Binding Books}"
+                      HasUnevenRows="True" 
+                      ItemSelected="LVBooks_ItemSelected" 
+                      HeightRequest="300">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame Margin="40, 20">
+                                    <StackLayout Margin="0" Padding="0">
+                                        <StackLayout Padding="0">
+                                            <Image Source="{Binding Image}" HeightRequest="100" WidthRequest="30"/>
+                                            <Label Text="{Binding Name}" 
+                                                   FontSize="10" 
+                                                   TextColor="Black"/>
+                                            <Label Text="{Binding Author}"
+                                                   FontSize="10" 
+                                                   TextColor="Black"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

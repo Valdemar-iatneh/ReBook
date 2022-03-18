@@ -1,20 +1,20 @@
 [
-   {	
-        "book_id": "8008",
-        "img_src": "C:\Users\ИМЕННО ОН\Downloads\Обложка_книги_'Наваждения',_Макс_Фрай.jpg",
-        "name": "Наваждения",
-	      "author": "Макс Фрай"
-    },
-    {	
-        "book_id": "8008",
-        "img_src": "C:\Users\ИМЕННО ОН\Downloads\Обложка_книги_'Наваждения',_Макс_Фрай.jpg",
-        "name": "Наваждения",
-	      "author": "Макс Фрай"
-    },
-    {	
-        "book_id": "8008",
-        "img_src": "C:\Users\ИМЕННО ОН\Downloads\Обложка_книги_'Наваждения',_Макс_Фрай.jpg",
-        "name": "Наваждения",
-	      "author": "Макс Фрай"
-    }
+  {
+    "book_id": "8008",
+    "img_src": "/sites/default/files/styles/thumbnail/public/field/image/balzak-utrachennye-illjuzii.jpg?itok=IbPravrl",
+    "name": "Наваждения",
+    "author": "Макс Фрай"
+  },
+  {
+    "book_id": "8009",
+    "img_src": "/sites/default/files/styles/thumbnail/public/field/image/balzak-utrachennye-illjuzii.jpg?itok=IbPravrl",
+    "name": "dfijsdf",
+    "author": "Макс Фрай"
+  },
+  {
+    "book_id": "8010",
+    "img_src": "/sites/default/files/styles/thumbnail/public/field/image/balzak-utrachennye-illjuzii.jpg?itok=IbPravrl",
+    "name": "ppppppp",
+    "author": "Макс Фрай"
+  }
 ]
