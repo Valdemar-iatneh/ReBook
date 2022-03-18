@@ -20,6 +20,7 @@ namespace ReBook
                     db = new DataAccess(
                         Path.Combine(
                             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME));
+
                 }
                 return db;
             }
