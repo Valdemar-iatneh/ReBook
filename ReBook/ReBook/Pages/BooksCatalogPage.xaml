@@ -18,7 +18,7 @@
                                 <Frame Margin="40, 20">
                                     <StackLayout Margin="0" Padding="0">
                                         <StackLayout Padding="0">
-                                            <Image Source="{Binding Image}" HeightRequest="100" WidthRequest="30"/>
+                                            <Image Source="{Binding ImagePath}" HeightRequest="100" WidthRequest="30"/>
                                             <Label Text="{Binding Name}" 
                                                    FontSize="10" 
                                                    TextColor="Black"/>

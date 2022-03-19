@@ -24,7 +24,7 @@ namespace ReBook.Data
             {
                 Uri = new Uri($"https://book-cover.ru{Image}"),
                 CachingEnabled = true,
-                CacheValidity = TimeSpan.FromDays(1)
+               
             };
 
     }
