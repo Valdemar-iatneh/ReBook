@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ReBook.Droid
 {
-    [Activity(Label = "SplashActivity", MainLauncher = true, Theme = "@style/MyTheme.Splash", NoHistory = true)]
+    [Activity(Label = "SplashActivity", Theme = "@style/MyTheme.Splash", NoHistory = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
