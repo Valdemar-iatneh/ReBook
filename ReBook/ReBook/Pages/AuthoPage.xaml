@@ -8,31 +8,39 @@
             <Image Margin="37,28" Source="logo.png"/>
             <StackLayout VerticalOptions="Center" Margin="37,0">
 
-                <StackLayout>
-                    <Frame CornerRadius="50" 
-                       BackgroundColor="#CD6273"
-                       HeightRequest="30"
-                       >
+                <StackLayout >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Danis">
+
+                        </Label>
                         <Entry x:Name="Login" 
-                           BackgroundColor="#CD6273" 
+                           BackgroundColor="#50CD6273" 
                            TextColor="White" 
                            ClearButtonVisibility="WhileEditing"
                            Placeholder="Login"
+                           PlaceholderColor="White"
+                           Margin="0,0,0,-9"
                        />
-                    </Frame>
+                        
+                    </StackLayout>
+                    <Line BackgroundColor="White"
+                          HeightRequest="3"
+                          X2="337"
+                          ></Line>
                 </StackLayout>
 
                 <StackLayout>
-                    <Frame CornerRadius="50" 
-                               BackgroundColor="#CD6273"
-                               HeightRequest="30">
-                        <Entry IsPassword="true" 
-                                   BackgroundColor="#CD6273" 
+                    <Entry IsPassword="true" 
+                                   BackgroundColor="#50CD6273" 
                                    x:Name="Password" 
                                    TextColor="White" 
                                    ClearButtonVisibility="WhileEditing"
-                                   Placeholder="Password" />
-                    </Frame>
+                                   Placeholder="Password" 
+                                   Margin="0,0,0,-9" />
+                    <Line BackgroundColor="White"
+                          HeightRequest="3"
+                          X2="337"
+                          ></Line>
                 </StackLayout>
                 
             </StackLayout>
@@ -40,7 +48,7 @@
                 <Button BackgroundColor="#CD6273" 
                         TextColor="White"  
                         Text="Sign in"
-                        CornerRadius="50"
+                        CornerRadius="30"
                         WidthRequest="150"
                         HeightRequest="75"></Button>
             </StackLayout>
