@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+    xmlns:controls1="clr-namespace:ReBook.CustomObjects"
+    x:Class="ReBook.Pages.AboutBookPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="mainTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoBoldFont"/>
+            </Style>
+            <Style x:Key="usualTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoRegularFont"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    
+</ContentPage>

@@ -12,7 +12,7 @@ namespace ReBook
         {
             InitializeComponent();
 
-            MainPage = new Test();
+            MainPage = new AboutBookPage();
         }
 
         protected override void OnStart()
