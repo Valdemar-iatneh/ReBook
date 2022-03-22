@@ -18,5 +18,51 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    
+    <ScrollView>
+        <StackLayout>
+            <StackLayout x:Name="AboutBook">
+                <Image Source="logo.png" Margin="40, 28, 40, 0"/>
+                <StackLayout Margin="40, 20">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Style="{StaticResource usualTextStyle}"
+                            Text="Название:"
+                            FontSize="24"/>
+                        <Label Style="{StaticResource mainTextStyle}" 
+                            FontSize="24"
+                            Text="Lorem ipsum"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Style="{StaticResource usualTextStyle}" 
+                            FontSize="20"
+                            Text="Автор:"/>
+                        <Label  Style="{StaticResource mainTextStyle}" 
+                            FontSize="20"
+                            Text="Сунь Гихун"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label  Style="{StaticResource mainTextStyle}" 
+                            FontSize="18"
+                            Text="О книге:"/>
+                        <Label Style="{StaticResource usualTextStyle}" 
+                            FontSize="18"
+                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Style="{StaticResource usualTextStyle}"
+                    FontSize="24"
+                    Text="Рейтинг:"/>
+                        <Label Style="{StaticResource mainTextStyle}"
+                    FontSize="24"
+                    Text="1.7"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
