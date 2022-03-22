@@ -187,8 +187,30 @@
                     </StackLayout>
                 </controls1:CustomFrame>
             </StackLayout>
+
+            <StackLayout x:Name="AddReview" BackgroundColor="#CD6273">
+                <controls1:CustomFrame
+                    CornerRadius="0, 30, 30, 30"
+                    Margin="32, 14, 32, 0"
+                    BackgroundColor="#fff">
+                    <Editor 
+                        PlaceholderColor="#50000000" 
+                        FontFamily="RobotoRegularFont"
+                        Placeholder="Добавить отзыв ..."/>
+                </controls1:CustomFrame>
+            </StackLayout>
             
-            
+            <StackLayout x:Name="AboutRabs" BackgroundColor="#CD6273">
+                <Button 
+                    BackgroundColor="#CD6273"
+                    FontFamily="RobotoRegularFont"
+                    FontSize="18"
+                    TextColor="#fff"
+                    Margin="15"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="© Разработчики"/>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>
