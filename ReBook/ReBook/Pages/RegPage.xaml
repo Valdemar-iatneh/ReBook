@@ -1,14 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReBook.Pages.AuthoPage"
+             x:Class="ReBook.Pages.RegPage"
              BackgroundImageSource="background.png">
     <ContentPage.Content>
         <StackLayout>
-            <Image Margin="37,28" Source="logo.png"/>
+            <Image Margin="89,28" Source="logo.png"/>
             <StackLayout VerticalOptions="Center" Margin="37,0">
 
-                <StackLayout >
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Danis">
+                        </Label>
+                        <Entry x:Name="Name" 
+                           BackgroundColor="#50CD6273" 
+                           TextColor="White" 
+                           ClearButtonVisibility="WhileEditing"
+                           Placeholder="Name"
+                           PlaceholderColor="White"
+                           Margin="0,0,0,-9" 
+                           WidthRequest="300"/>
+                    </StackLayout>
+                    <Line BackgroundColor="White"
+                          HeightRequest="3"
+                          X2="337"
+                          ></Line>
+                </StackLayout>
+                
+                <StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Danis">
                         </Label>
@@ -19,10 +38,7 @@
                            Placeholder="Login"
                            PlaceholderColor="White"
                            Margin="0,0,0,-9" 
-                           WidthRequest="300"
-                           
-                       />
-                        
+                           WidthRequest="300"/>
                     </StackLayout>
                     <Line BackgroundColor="White"
                           HeightRequest="3"
@@ -45,7 +61,6 @@
                                WidthRequest="300"
                                />
                     </StackLayout>
-                    
                     <StackLayout>
                         <Line BackgroundColor="White"
                           HeightRequest="3"
@@ -53,22 +68,41 @@
                           ></Line>
                     </StackLayout>
                 </StackLayout>
-                
-            </StackLayout>
-            <StackLayout Margin="37,0">
-                <Button BackgroundColor="#CD6273" 
+
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Danis">
+                        </Label>
+                        <Entry x:Name="Confirm" 
+                           BackgroundColor="#50CD6273" 
+                           TextColor="White" 
+                           ClearButtonVisibility="WhileEditing"
+                           Placeholder="Confirm"
+                           PlaceholderColor="White"
+                           Margin="0,0,0,-9" 
+                           WidthRequest="300"/>
+                    </StackLayout>
+                    <Line BackgroundColor="White"
+                          HeightRequest="3"
+                          X2="337"
+                          ></Line>
+                </StackLayout>
+
+                <StackLayout Margin="37,15">
+                    <Button BackgroundColor="#CD6273" 
                         TextColor="White"  
-                        Text="Sign in"
+                        Text="Sign up"
                         CornerRadius="30"
                         WidthRequest="150"
                         HeightRequest="75"></Button>
-            </StackLayout>
-            <StackLayout>
-                <Label FontSize="26" 
+                </StackLayout>
+                <StackLayout>
+                    <Label FontSize="26" 
                        TextColor="White" 
-                       HorizontalOptions="Center">Registration</Label>
+                       HorizontalOptions="Center">Return to back</Label>
+                </StackLayout>
+                
             </StackLayout>
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>
