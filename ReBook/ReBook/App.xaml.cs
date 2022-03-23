@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 using ReBook.Data;
 using System.IO;
 
+
 namespace ReBook
 {
     public partial class App : Application
