@@ -8,19 +8,17 @@
             <Image Margin="37,28" Source="logo.png"/>
             <StackLayout VerticalOptions="Center" Margin="37,0">
 
-                <StackLayout >
+                <StackLayout BackgroundColor="#50CD6273">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Danis">
+                        <Label Text="D">
                         </Label>
                         <Entry x:Name="Login" 
-                           BackgroundColor="#50CD6273" 
                            TextColor="White" 
                            ClearButtonVisibility="WhileEditing"
                            Placeholder="Login"
                            PlaceholderColor="White"
-                           Margin="0,0,0,-9" 
-                           WidthRequest="300"
-                           
+                           Margin="40,0"
+
                        />
                         
                     </StackLayout>
@@ -30,19 +28,17 @@
                           ></Line>
                 </StackLayout>
 
-                <StackLayout>
+                <StackLayout BackgroundColor="#50CD6273">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Danis">
+                        <Label Text="D">
                         </Label>
-                        <Entry IsPassword="true" 
-                               BackgroundColor="#50CD6273" 
+                        <Entry IsPassword="true"  
                                x:Name="Password" 
                                TextColor="White" 
                                ClearButtonVisibility="WhileEditing"
                                Placeholder="Password" 
                                PlaceholderColor="White"
-                               Margin="0,0,0,-9" 
-                               WidthRequest="300"
+                               Margin="40,0"
                                />
                     </StackLayout>
                     
@@ -59,6 +55,7 @@
                 <Button BackgroundColor="#CD6273" 
                         TextColor="White"  
                         Text="Sign in"
+                        Font="20"
                         CornerRadius="30"
                         WidthRequest="150"
                         HeightRequest="75"></Button>

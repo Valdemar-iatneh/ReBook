@@ -15,6 +15,7 @@ namespace ReBook.Pages
         public RegPage()
         {
             InitializeComponent();
+            
         }
     }
 }
