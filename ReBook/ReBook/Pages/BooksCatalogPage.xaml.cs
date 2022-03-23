@@ -24,7 +24,7 @@ namespace ReBook.Pages
 
         private void LVBooks_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            Navigation.PushAsync(new Test());
         }
         
     }
