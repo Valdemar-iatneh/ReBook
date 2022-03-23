@@ -11,7 +11,9 @@ namespace ReBook
         {
             InitializeComponent();
 
-            MainPage = new RegPage();
+            MainPage = new NavigationPage(new AuthoPage());
+
+
         }
 
         protected override void OnStart()

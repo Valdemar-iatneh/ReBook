@@ -94,11 +94,16 @@
                         ></Button>
                 </StackLayout>
                 <StackLayout>
-                    <Label FontSize="26" 
+                        <Button FontSize="26" 
+                         BackgroundColor="#00CD6273"
                            x:Name="Return"
                        TextColor="White" 
-                       HorizontalOptions="Center" Padding="0,0,0,20">Return to back</Label>
-                </StackLayout>
+                       HorizontalOptions="Center" 
+                        Padding="0,0,0,25"
+                        Text="Return to back"
+                        Clicked="Return_Clicked"   
+                           /> 
+                    </StackLayout>
                 
             </StackLayout>
         </StackLayout>

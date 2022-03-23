@@ -4,15 +4,16 @@
              x:Class="ReBook.Pages.AuthoPage"
              BackgroundImageSource="background.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Image Margin="37,28" Source="logo.png"/>
-            <StackLayout VerticalOptions="Center" Margin="37,0">
+        <ScrollView>
+            <StackLayout>
+                <Image Margin="37,28" Source="logo.png"/>
+                <StackLayout VerticalOptions="Center" Margin="37,0">
 
-                <StackLayout BackgroundColor="#50CD6273">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="D">
-                        </Label>
-                        <Entry x:Name="Login" 
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="D">
+                            </Label>
+                            <Entry x:Name="Login" 
                            TextColor="White" 
                            ClearButtonVisibility="WhileEditing"
                            Placeholder="Login"
@@ -20,19 +21,19 @@
                            Margin="40,0"
 
                        />
-                        
-                    </StackLayout>
-                    <Line BackgroundColor="White"
+
+                        </StackLayout>
+                        <Line BackgroundColor="White"
                           HeightRequest="3"
                           X2="337"
                           ></Line>
-                </StackLayout>
+                    </StackLayout>
 
-                <StackLayout BackgroundColor="#50CD6273">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="D">
-                        </Label>
-                        <Entry IsPassword="true"  
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="D">
+                            </Label>
+                            <Entry IsPassword="true"  
                                x:Name="Password" 
                                TextColor="White" 
                                ClearButtonVisibility="WhileEditing"
@@ -40,32 +41,36 @@
                                PlaceholderColor="White"
                                Margin="40,0"
                                />
-                    </StackLayout>
-                    
-                    <StackLayout>
-                        <Line BackgroundColor="White"
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Line BackgroundColor="White"
                           HeightRequest="3"
                           X2="337"
                           ></Line>
+                        </StackLayout>
                     </StackLayout>
+
                 </StackLayout>
-                
-            </StackLayout>
-            <StackLayout Margin="37,0">
-                <Button BackgroundColor="#CD6273" 
+                <StackLayout Margin="37,0">
+                    <Button BackgroundColor="#CD6273" 
                         TextColor="White"  
                         Text="Sign in"
                         Font="20"
                         CornerRadius="30"
                         WidthRequest="150"
-                        HeightRequest="75"></Button>
-            </StackLayout>
-            <StackLayout>
-                <Label FontSize="26" 
+                        HeightRequest="75"/>
+                </StackLayout>
+                <StackLayout>
+                    <Button FontSize="26" 
                        TextColor="White" 
-                       HorizontalOptions="Center">Registration</Label>
+                       HorizontalOptions="Center"
+                       Text="Registration"
+                       BackgroundColor="#00CD6273"
+                        Clicked="Button_Clicked"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-        
+        </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

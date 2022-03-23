@@ -15,7 +15,12 @@ namespace ReBook.Pages
         public RegPage()
         {
             InitializeComponent();
-            
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private void Return_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
     }
 }
