@@ -5,7 +5,6 @@
     <ContentPage.Content>
         <StackLayout Padding="0">
 
-            <FlexLayout x:Name="filter" Wrap="Wrap" Margin="10" AlignItems="Center"/>
             <ListView x:Name="LVBooks"
                       ItemsSource="{Binding Books}"
                       HasUnevenRows="True" 
@@ -15,16 +14,20 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <Frame Margin="40, 20">
-                                    <StackLayout Margin="0" Padding="0">
+                                <Frame Margin="60, 20">
+                                    <StackLayout Margin="0" Padding="0" HeightRequest="370">
                                         <StackLayout Padding="0">
-                                            <Image Source="{Binding ImagePath}" HeightRequest="100" WidthRequest="30"/>
+                                            <Image Source="{Binding ImagePath}" HeightRequest="300" VerticalOptions="Center"/>
                                             <Label Text="{Binding Name}" 
-                                                   FontSize="10" 
-                                                   TextColor="Black"/>
+                                                   FontFamily="RobotoRegularFont"
+                                                   FontSize="26" 
+                                                   TextColor="Black"
+                                                   Margin="15,0,10,10"/>
                                             <Label Text="{Binding Author}"
-                                                   FontSize="10" 
-                                                   TextColor="Black"/>
+                                                   FontFamily="RobotoRegularFont"
+                                                   FontSize="20" 
+                                                   Margin="15,-18,10,10"
+                                                   TextColor="Gray"/>
                                         </StackLayout>
                                     </StackLayout>
                                 </Frame>
