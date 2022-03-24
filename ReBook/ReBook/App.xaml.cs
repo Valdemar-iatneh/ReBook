@@ -27,8 +27,12 @@ namespace ReBook
         public App()
         {
             InitializeComponent();
+            if (Db.GetBooks().Count == 0)
+            {
+                Deserialize.Main();
+            }
 
-            MainPage = new Test();
+            MainPage = new NavigationPage(new BooksCatalogPage());
         }
 
         protected override void OnStart()

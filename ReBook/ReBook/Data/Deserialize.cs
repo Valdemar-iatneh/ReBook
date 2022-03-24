@@ -12,7 +12,7 @@ namespace ReBook.Data
         public static void Main()
         {
             var assembly = Assembly.GetExecutingAssembly();
-            string path = @"Rebook.Data.BooksData.json";
+            string path = @"ReBook.Data.BooksData.json";
             string json;
             using (Stream stream = assembly.GetManifestResourceStream(path))
             using (StreamReader sr = new StreamReader(stream))
@@ -21,6 +21,7 @@ namespace ReBook.Data
             }
             var books = JsonConvert.DeserializeObject<List<Book>>(json);
 
+            App.Db.DeleteAllBooks();
             foreach (Book book in books)
             {
                 App.Db.SaveBook(book);
