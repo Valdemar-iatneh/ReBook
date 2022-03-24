@@ -27,12 +27,18 @@ namespace ReBook
         public App()
         {
             InitializeComponent();
+
             if (Db.GetBooks().Count == 0)
             {
                 Deserialize.Main();
             }
 
-            MainPage = new NavigationPage(new BooksCatalogPage());
+            MainPage = new NavigationPage(new BooksCatalogPage())
+            {
+                BarBackgroundColor = Color.FromHex("#CD6273")
+            };
+
+            Application.Current.UserAppTheme = OSAppTheme.Light;
         }
 
         protected override void OnStart()

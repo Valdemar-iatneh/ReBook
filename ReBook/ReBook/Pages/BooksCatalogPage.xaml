@@ -2,9 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReBook.Pages.BooksCatalogPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label 
+                Text="Каталог" 
+                FontFamily="RobotoRegularFont" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="22"
+                TextColor="White"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Order="Primary"
+            IconImageSource="filter.png"/>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout Padding="0">
-
             <ListView x:Name="LVBooks"
                       ItemsSource="{Binding Books}"
                       HasUnevenRows="True" 
