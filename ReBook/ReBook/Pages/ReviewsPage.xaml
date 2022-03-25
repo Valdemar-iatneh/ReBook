@@ -1,7 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls1="clr-namespace:ReBook.CustomObjects"
              x:Class="ReBook.Pages.ReviewsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="mainTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoBoldFont"/>
+            </Style>
+            <Style x:Key="usualTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoRegularFont"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="LVreviews"
@@ -12,27 +26,47 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <Frame Margin="60, 20" BackgroundColor="#ADDCA9" HeightRequest="100" CornerRadius="30">
-                                    <StackLayout Margin="0" Padding="0" HeightRequest="370">
-                                        <StackLayout Padding="0" >
-                                            <Label Text="{Binding Author}" 
-                                                   FontFamily="RobotoRegularFont"
-                                                   FontSize="10" 
-                                                   TextColor="Black"
-                                                   Margin="15,0,10,10"/>
-                                            <Label Text="{Binding Comment}"
-                                                   FontFamily="RobotoRegularFont"
-                                                   FontSize="10" 
-                                                   Margin="15,-18,10,10"
-                                                   TextColor="Gray"/>
-                                            <Label Text="{Binding Rank}"
-                                                   FontFamily="RobotoRegularFont"
-                                                   FontSize="10" 
-                                                   Margin="15,-18,10,10"
-                                                   TextColor="Gray"/>
+                                <controls1:CustomFrame x:Name="Review1" 
+                                    BackgroundColor="#ADDCA9"           
+                                    Margin="40, 20"
+                                    CornerRadius="0, 30, 30, 30">
+                                    <StackLayout Margin="-20">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="logo.png"
+                                                WidthRequest="70"
+                                                HeightRequest="70"
+                                                Margin="24, 18"/>
+                                            <Label 
+                                                Text="{Binding Author}" 
+                                                Style="{StaticResource mainTextStyle}" 
+                                                FontSize="22" 
+                                                VerticalOptions="Center"/>
+                                        </StackLayout>
+                                        <Label 
+                                            Text="{Binding Comment}"
+                                            Style="{StaticResource usualTextStyle}"
+                                            FontSize="16" 
+                                            Margin="25, 0"/>
+                                        <StackLayout Orientation="Horizontal" Margin="24, 21">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label TextColor="Yellow" 
+                                                    FontFamily="IconFont"
+                                                    FontSize="30"
+                                                    Text="&#xf09a;"/>
+                                                <Label 
+                                                    Text="{Binding Rank}"
+                                                    Style="{StaticResource usualTextStyle}"
+                                                    HorizontalOptions="Center"
+                                                    FontSize="22"/>
+                                            </StackLayout>
+                                            <Label Style="{StaticResource mainTextStyle}"
+                                                FontSize="14"
+                                                VerticalOptions="Center"
+                                                Margin="120, 0, 0, 0"
+                                                Text="27.03.2022"/>
                                         </StackLayout>
                                     </StackLayout>
-                                </Frame>
+                                </controls1:CustomFrame>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
