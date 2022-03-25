@@ -13,12 +13,6 @@
         </StackLayout>
     </NavigationPage.TitleView>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem
-            Order="Primary"
-            IconImageSource="filter.png"/>
-    </ContentPage.ToolbarItems>
-
     <ContentPage.Content>
         <StackLayout Padding="0" BackgroundColor="#C0C0C0">
             <ListView x:Name="LVBooks"

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReBook.Pages.developers"
+             BackgroundImageSource="background.png">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label 
+                Text="©Разработчики" 
+                FontFamily="RobotoRegularFont" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="22"
+                TextColor="White"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        
+        <StackLayout BackgroundColor="#90000000">
+            <Label 
+                Text="Our team"
+                FontSize="30"
+                TextColor="White"
+                FontFamily="Bold"
+                HorizontalOptions="Center"/>
+            
+            <StackLayout 
+                BackgroundColor="#ADDCA9"
+                HeightRequest="150"
+                Margin="20,10">
+                <StackLayout
+                    Margin="5">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Margin="10,10">
+                            <Frame
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    CornerRadius="50">
+                                <Image
+                                    Margin="-30"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    Source="Walder.jpg"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label
+                                        Text="Володя"
+                                        FontFamily="OpenSansBoldFont"
+                                        FontSize="25"
+                                        TextColor="Black" 
+                                        Margin="20,10,0,0"/>
+                            <Label
+                                 Text="Директор"
+                                 FontFamily="OpenSansBoldFont"
+                                 FontSize="17"
+                                 TextColor="#99000000"
+                                 Margin="20,0,0,-5"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label
+                        Text="Тут что-то написано, но мы скоро что-то придумаем."
+                        FontSize="20"
+                        TextColor="Black"
+                        Margin="10,-10,10,0"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout 
+                BackgroundColor="#ADDCA9"
+                HeightRequest="150"
+                Margin="20,10">
+                <StackLayout
+                    Margin="5">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Margin="10,10">
+                            <Frame
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    CornerRadius="50">
+                                <Image
+                                    Margin="-30"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    Source="Artem.jpg"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label
+                                        Text="Артем"
+                                        FontFamily="OpenSansBoldFont"
+                                        FontSize="25"
+                                        TextColor="Black" 
+                                        Margin="20,10,0,0"/>
+                            <Label
+                                 Text="Зам. Директора"
+                                 FontFamily="OpenSansBoldFont"
+                                 FontSize="17"
+                                 TextColor="#99000000"
+                                 Margin="20,0,0,-5"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label
+                        Text="Тут что-то написано, но мы скоро что-то придумаем."
+                        FontSize="20"
+                        TextColor="Black"
+                        Margin="10,-10,10,0"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout 
+                BackgroundColor="#ADDCA9"
+                HeightRequest="150"
+                Margin="20,10">
+                <StackLayout
+                    Margin="5">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Margin="10,10">
+                            <Frame
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    CornerRadius="50">
+                                <Image
+                                    Margin="-40"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    Source="Dan.jpg"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label
+                                        Text="Данис"
+                                        FontFamily="OpenSansBoldFont"
+                                        FontSize="25"
+                                        TextColor="Black" 
+                                        Margin="20,10,0,0"/>
+                            <Label
+                                 Text="Подчиненный"
+                                 FontFamily="OpenSansBoldFont"
+                                 FontSize="17"
+                                 TextColor="#99000000"
+                                 Margin="20,0,0,-5"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label
+                        Text="Тут что-то написано, но мы скоро что-то придумаем."
+                        FontSize="20"
+                        TextColor="Black"
+                        Margin="10,-10,10,0"/>
+                </StackLayout>
+            </StackLayout>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

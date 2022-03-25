@@ -44,7 +44,7 @@ namespace ReBook.Pages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //App.Db.DeleteItem();
+            Navigation.PushAsync(new developers());
 
         }
     }
