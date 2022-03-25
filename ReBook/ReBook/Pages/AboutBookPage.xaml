@@ -62,7 +62,131 @@
                 </StackLayout>
             </StackLayout>
 
-
+            <StackLayout x:Name="Reviews" BackgroundColor="#CD6273">
+                <controls1:CustomFrame x:Name="Review1" 
+                    BackgroundColor="#ADDCA9"           
+                    Margin="40, 28, 40, 14"
+                    CornerRadius="0, 30, 30, 30">
+                    <StackLayout Margin="-20">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="logo.png"
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            Margin="24, 18"/>
+                            <Label Style="{StaticResource mainTextStyle}" 
+                            FontSize="22"
+                            VerticalOptions="Center"
+                            Text="Автор отзыва"/>
+                        </StackLayout>
+                        <Label Style="{StaticResource usualTextStyle}"
+                            FontSize="16" 
+                            Margin="25, 0"
+                            Text="ОтзывОтзывОтзывОтзывОтзывОтзывывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзывОтзывывОтзывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзыв"/>
+                        <StackLayout Orientation="Horizontal" Margin="24, 21">
+                            <StackLayout Orientation="Horizontal">
+                                <Label TextColor="Yellow" 
+                                    FontFamily="IconFont"
+                                    FontSize="30"
+                                    Text="&#xf09a;"/>
+                                <Label Style="{StaticResource usualTextStyle}"
+                                    FontSize="22"
+                                    HorizontalOptions="Center"
+                                    Text="5"/>
+                            </StackLayout>
+                            <Label Style="{StaticResource mainTextStyle}"
+                                FontSize="14"
+                                VerticalOptions="Center"
+                                Margin="120, 0, 0, 0"
+                                Text="11.11.2011"/>
+                        </StackLayout>
+                    </StackLayout>
+                </controls1:CustomFrame>
+                <controls1:CustomFrame x:Name="Review2" 
+                    BackgroundColor="#ADDCA9"           
+                    Margin="40, 14"
+                    CornerRadius="0, 30, 30, 30">
+                    <StackLayout Margin="-20">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="logo.png"
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            Margin="24, 18"/>
+                            <Label Style="{StaticResource mainTextStyle}" 
+                            FontSize="22"
+                            VerticalOptions="Center"
+                            Text="Автор отзыва"/>
+                        </StackLayout>
+                        <Label Style="{StaticResource usualTextStyle}"
+                            FontSize="16" 
+                            Margin="25, 0"
+                            Text="ОтзывОтзывОтзывОтзывОтзывОтзывывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзывОтзывывОтзывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзыв"/>
+                        <StackLayout Orientation="Horizontal" Margin="24, 21">
+                            <StackLayout Orientation="Horizontal">
+                                <Label TextColor="Yellow" 
+                                    FontFamily="IconFont"
+                                    FontSize="30"
+                                    Text="&#xf09a;"/>
+                                <Label Style="{StaticResource usualTextStyle}"
+                                    FontSize="22"
+                                    HorizontalOptions="Center"
+                                    Text="5"/>
+                            </StackLayout>
+                            <Label Style="{StaticResource mainTextStyle}"
+                                FontSize="14"
+                                VerticalOptions="Center"
+                                Margin="120, 0, 0, 0"
+                                Text="11.11.2011"/>
+                        </StackLayout>
+                    </StackLayout>
+                </controls1:CustomFrame>
+                <controls1:CustomFrame x:Name="Review3" 
+                    BackgroundColor="#ADDCA9"           
+                    Margin="40, 14, 40, 28"
+                    CornerRadius="0, 30, 30, 30">
+                    <StackLayout Margin="-20">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="logo.png"
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            Margin="24, 18"/>
+                            <Label Style="{StaticResource mainTextStyle}" 
+                            FontSize="22"
+                            VerticalOptions="Center"
+                            Text="Автор отзыва"/>
+                        </StackLayout>
+                        <Label Style="{StaticResource usualTextStyle}"
+                            FontSize="16" 
+                            Margin="25, 0"
+                            Text="ОтзывОтзывОтзывОтзывОтзывОтзывывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзывОтзывывОтзывОтзывОтзывОтзывОтзывОтзыв
+                            ОтзывОтзывОтзывОтзывОтзыв"/>
+                        <StackLayout Orientation="Horizontal" Margin="24, 21">
+                            <StackLayout Orientation="Horizontal">
+                                <Label TextColor="Yellow" 
+                                    FontFamily="IconFont"
+                                    FontSize="30"
+                                    Text="&#xf09a;"/>
+                                <Label Style="{StaticResource usualTextStyle}"
+                                    FontSize="22"
+                                    HorizontalOptions="Center"
+                                    Text="5"/>
+                            </StackLayout>
+                            <Label Style="{StaticResource mainTextStyle}"
+                                FontSize="14"
+                                VerticalOptions="Center"
+                                Margin="120, 0, 0, 0"
+                                Text="11.11.2011"/>
+                        </StackLayout>
+                    </StackLayout>
+                </controls1:CustomFrame>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage> 
