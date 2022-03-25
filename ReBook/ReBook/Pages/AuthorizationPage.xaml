@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReBook.Pages.AuthorizationPage"
+             BackgroundImageSource="background.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Margin="37,28" Source="logo.png"/>
+            <StackLayout VerticalOptions="Center" Margin="37,0">
+                <StackLayout BackgroundColor="#50CD6273">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="D"/>
+                        <Entry 
+                            x:Name="Login"
+                            TextColor="White" 
+                            ClearButtonVisibility="WhileEditing"
+                            Placeholder="Login"
+                            PlaceholderColor="White"
+                            Margin="40,0"/>
+                    </StackLayout>
+                    <Line 
+                        BackgroundColor="White"
+                        HeightRequest="3"
+                        X2="337"/>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="#50CD6273">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="D">
+                        </Label>
+                        <Entry 
+                            IsPassword="true"
+                            x:Name="Password" 
+                            TextColor="White" 
+                            ClearButtonVisibility="WhileEditing"
+                            Placeholder="Password" 
+                            PlaceholderColor="White"
+                            Margin="40,0"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Line BackgroundColor="White"
+                        HeightRequest="3"
+                        X2="337"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+            <StackLayout Margin="37,0">
+                <Button 
+                    BackgroundColor="#CD6273" 
+                    TextColor="White"  
+                    Text="Sign in"
+                    Font="20"
+                    CornerRadius="30"
+                    WidthRequest="150"
+                    HeightRequest="75"/>
+            </StackLayout>
+            <StackLayout>
+                <Button 
+                    FontSize="26" 
+                    TextColor="White" 
+                    HorizontalOptions="Center"
+                    Text="Registration"
+                    BackgroundColor="#00CD6273"
+                    Clicked="Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
