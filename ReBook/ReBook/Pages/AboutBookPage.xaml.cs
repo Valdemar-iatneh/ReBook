@@ -18,13 +18,17 @@ namespace ReBook.Pages
         public AboutBookPage()
         {
             InitializeComponent();
-            foreach (var review in App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id))
+            if(App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id).Count() != 0)
             {
-                sum += (review.Rank);
+                foreach (var review in App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id))
+                {
+                    sum += (review.Rank);
+                }
+                rate = sum / (App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id).Count());
+                Rating.Text = rate.ToString();
+                BindingContext = this;
             }
-            rate = sum / (App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id).Count());
-            Rating.Text = rate.ToString();
-            BindingContext = this;
+            
         }
 
         private void BtnAddComment_Clicked(object sender, EventArgs e)
@@ -40,7 +44,8 @@ namespace ReBook.Pages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            App.Db.DeleteItem();
+            //App.Db.DeleteItem();
+
         }
     }
 }

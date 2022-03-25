@@ -3,7 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 
     xmlns:controls1="clr-namespace:ReBook.CustomObjects"
-    x:Class="ReBook.Pages.AboutBookPage">
+    x:Class="ReBook.Pages.AboutBookPage"
+               Title="{Binding Name}">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -17,7 +18,7 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <ScrollView>
+    <ScrollView BackgroundColor="#C0C0C0">
         <StackLayout >
             <StackLayout x:Name="AboutBook">
                 <Image Source="{Binding ImagePath}" Margin="40, 28, 40, 0"/>
@@ -25,25 +26,25 @@
                     <StackLayout Orientation="Horizontal">
                         <Label Style="{StaticResource usualTextStyle}"
                             Text="Название:"
-                            FontSize="24"/>
+                            FontSize="15"/>
                         <Label Style="{StaticResource mainTextStyle}" 
-                            FontSize="24"
+                            FontSize="15"
                             Text="{Binding Name}"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Style="{StaticResource usualTextStyle}" 
-                            FontSize="20"
+                            FontSize="15"
                             Text="Автор:"/>
                         <Label  Style="{StaticResource mainTextStyle}" 
-                            FontSize="20"
+                            FontSize="Body"
                              Text="{Binding Author}"/>
                     </StackLayout>
                     <StackLayout>
                         <Label  Style="{StaticResource mainTextStyle}" 
-                            FontSize="18"
+                            FontSize="15"
                             Text="О книге:"/>
                         <Label Style="{StaticResource usualTextStyle}" 
-                            FontSize="18"
+                            FontSize="15"
                             Text="{Binding Description}"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
@@ -55,21 +56,22 @@
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
-
-        <StackLayout Margin="0,0,0,0">
-                <StackLayout BackgroundColor="#CD6273" Margin="0,0,0,0">
+            
+            <StackLayout Margin="5,0,5,0">
+                
                     <Button 
-                    BackgroundColor="#CD6273"
-                    FontFamily="RobotoRegularFont"
-                    FontSize="18"
-                    TextColor="#fff"
-                    Margin="15"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"
-                    Text="Отзывы"
-                    x:Name="Reviews"
-                    Clicked="Reviews_Clicked"/>
-                </StackLayout>
+                        BackgroundColor="#CD6273"
+                        CornerRadius="1000"
+                        FontFamily="RobotoRegularFont"
+                        FontSize="18"
+                        TextColor="#fff"
+                        Margin="15"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Отзывы"
+                        x:Name="Reviews"
+                        Clicked="Reviews_Clicked"/>
+                
 
                 <StackLayout x:Name="AddReview" BackgroundColor="#CD6273" >
                 <controls1:CustomFrame
@@ -80,6 +82,7 @@
                         x:Name="BtnAddComment"
                         Margin="0, -10"
                         BackgroundColor="White"
+                        CornerRadius="500"
                         TextColor="#50000000" 
                         FontFamily="RobotoRegularFont"
                         Text="Добавить отзыв ..."
@@ -97,7 +100,8 @@
                     Clicked="Button_Clicked"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
-                    Text="© Разработчики"/>
+                    Text="© Разработчики"
+                    CornerRadius="30"/>
             </StackLayout>
         </StackLayout>
         </StackLayout>
