@@ -18,7 +18,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <ScrollView BackgroundColor="#50C0C0C0">
+    <ScrollView BackgroundColor="#C0C0C0">
         <StackLayout>
             <StackLayout x:Name="AboutBook">
                 <Image Source="{Binding ImagePath}" Margin="40, 28, 40, 0"/>

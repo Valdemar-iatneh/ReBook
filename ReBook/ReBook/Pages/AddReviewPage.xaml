@@ -84,7 +84,6 @@
                             WidthRequest="50"
                             BackgroundColor="white"
                             Clicked="Rank5_Clicked"/>
-
                     </StackLayout>
                 </StackLayout>
             </controls1:CustomFrame>

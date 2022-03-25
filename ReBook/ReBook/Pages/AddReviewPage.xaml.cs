@@ -80,8 +80,6 @@ namespace ReBook.Pages
             App.Db.SaveReview(review);
             await Navigation.PopAsync();
             //BooksCatalogPage.book.Reviews.Add(review);
-
-
         }
     }
 }
