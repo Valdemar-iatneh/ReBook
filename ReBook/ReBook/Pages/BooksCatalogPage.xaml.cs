@@ -13,7 +13,9 @@ namespace ReBook.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BooksCatalogPage : ContentPage
     {
+        public static Book book { get; set; }
         public List<Book> Books { get; set; }
+        
 
         public BooksCatalogPage()
         {
@@ -24,14 +26,10 @@ namespace ReBook.Pages
 
         private async void LVBooks_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            //Review review = new Review();
-            //review.Author = "fdd";
-            //review.Comment = "fdfsadagfasg";
-            Book selectedBook = (Book)e.SelectedItem;
+            book = (Book)e.SelectedItem;
             AboutBookPage selectedBookPage = new AboutBookPage();
-            selectedBookPage.BindingContext = selectedBook;
+            selectedBookPage.BindingContext = book;
             await Navigation.PushAsync(selectedBookPage);
-            //selectedBook.Reviews.Add(review);
         }
     }
 }

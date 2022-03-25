@@ -17,9 +17,8 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
     <ScrollView>
-        <StackLayout>
+        <StackLayout >
             <StackLayout x:Name="AboutBook">
                 <Image Source="{Binding ImagePath}" Margin="40, 28, 40, 0"/>
                 <StackLayout Margin="40, 20">
@@ -58,25 +57,9 @@
                 </StackLayout>
             </StackLayout>
 
-            
-
-            <StackLayout x:Name="AddReview" BackgroundColor="#CD6273"  Margin="0, -6">
-                <controls1:CustomFrame
-                    CornerRadius="0, 30, 30, 30"
-                    Margin="32, 14, 32, 0"
-                    BackgroundColor="#fff">
+        <StackLayout Margin="0,0,0,0">
+                <StackLayout BackgroundColor="#CD6273" Margin="0,0,0,0">
                     <Button 
-                        x:Name="BtnAddComment"
-                        Margin="0, -10"
-                        TextColor="#50000000" 
-                        FontFamily="RobotoRegularFont"
-                        Text="Добавить отзыв ..."
-                        Clicked="BtnAddComment_Clicked"/>
-                </controls1:CustomFrame>
-            </StackLayout>
-
-            <StackLayout x:Name="AboutRabs" BackgroundColor="#CD6273" Margin="0,-10,0,0">
-                <Button 
                     BackgroundColor="#CD6273"
                     FontFamily="RobotoRegularFont"
                     FontSize="18"
@@ -84,8 +67,42 @@
                     Margin="15"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
+                    Text="Отзывы"
+                    x:Name="Reviews"
+                    Clicked="Reviews_Clicked"/>
+                </StackLayout>
+
+                <StackLayout x:Name="AddReview" BackgroundColor="#CD6273" >
+                <controls1:CustomFrame
+                    CornerRadius="0, 30, 30, 30"
+                    Margin="32, 14, 32, 10"
+                    BackgroundColor="#fff">
+                    <Button 
+                        x:Name="BtnAddComment"
+                        Margin="0, -10"
+                        BackgroundColor="White"
+                        TextColor="#50000000" 
+                        FontFamily="RobotoRegularFont"
+                        Text="Добавить отзыв ..."
+                        Clicked="BtnAddComment_Clicked"/>
+                </controls1:CustomFrame>
+            </StackLayout>
+
+            <StackLayout x:Name="AboutRabs" BackgroundColor="#CD6273"  Margin="0,0,0,0">
+                    <Button 
+                    BackgroundColor="#CD6273"
+                    FontFamily="RobotoRegularFont"
+                    FontSize="18"
+                    TextColor="#fff"
+                    Margin="15"
+                    Clicked="Button_Clicked"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
                     Text="© Разработчики"/>
             </StackLayout>
         </StackLayout>
+        </StackLayout>
     </ScrollView>
+
+
 </ContentPage> 
