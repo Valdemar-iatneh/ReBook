@@ -50,9 +50,8 @@
                         <Label Style="{StaticResource usualTextStyle}"
                     FontSize="24"
                     Text="Рейтинг:"/>
-                        <Label Style="{StaticResource mainTextStyle}"
-                    FontSize="24"
-                    Text="1.7"/>
+                        <Label x:Name="Rating" Style="{StaticResource mainTextStyle}"
+                    FontSize="24"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

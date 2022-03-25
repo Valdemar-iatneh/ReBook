@@ -13,10 +13,17 @@ namespace ReBook.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AboutBookPage : ContentPage
     {
+        private double rate;
+        private int sum;
         public AboutBookPage()
         {
             InitializeComponent();
-            
+            foreach (var review in App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id))
+            {
+                sum += (review.Rank);
+            }
+            rate = sum / (App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id).Count());
+            Rating.Text = rate.ToString();
             BindingContext = this;
         }
 
