@@ -18,9 +18,14 @@ namespace ReBook.Pages
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void RefBtn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Test());
+            Navigation.PushAsync(new RegistrationPage());
+        }
+
+        private void Sign_In_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new BooksCatalogPage());
         }
     }
 }

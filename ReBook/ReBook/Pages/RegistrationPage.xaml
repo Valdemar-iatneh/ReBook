@@ -10,48 +10,82 @@
                 <StackLayout VerticalOptions="Center" Margin="37,0">
 
                     <StackLayout  BackgroundColor="#50CD6273">
+
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="D"/>
-                            <Entry x:Name="Name" 
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe8a6;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                x:Name="Name" 
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
                                 TextColor="White" 
                                 ClearButtonVisibility="WhileEditing"
                                 Placeholder="Name"
                                 PlaceholderColor="White"
-                                Margin="40,0"/>
+                                Margin="40,0"
+                                WidthRequest="200"/>
                         </StackLayout>
-                        <Line BackgroundColor="White"
+
+                        <Line 
+                            BackgroundColor="White"
                             HeightRequest="3"
                             X2="337"/>
                     </StackLayout>
 
                     <StackLayout BackgroundColor="#50CD6273">
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="D"/>
-                            <Entry x:Name="Login" 
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe853;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                x:Name="Login" 
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
                                 TextColor="White" 
                                 ClearButtonVisibility="WhileEditing"
                                 Placeholder="Login"
                                 PlaceholderColor="White"
-                                Margin="40,0"/>
+                                Margin="40,0"
+                                WidthRequest="200"/>
                         </StackLayout>
-                        <Line BackgroundColor="White"
+
+                        <Line 
+                            BackgroundColor="White"
                             HeightRequest="3"
                             X2="337"/>
                     </StackLayout>
 
                     <StackLayout BackgroundColor="#50CD6273">
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="D"/>
-                            <Entry IsPassword="true"
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe897;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                IsPassword="true"
                                 x:Name="Password" 
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
                                 TextColor="White" 
                                 ClearButtonVisibility="WhileEditing"
                                 Placeholder="Password" 
                                 PlaceholderColor="White"
-                                Margin="40,0"/>
+                                Margin="40,0"
+                                WidthRequest="200"/>
                         </StackLayout>
+
                         <StackLayout>
-                            <Line BackgroundColor="White"
+                            <Line 
+                                BackgroundColor="White"
                                 HeightRequest="3"
                                 X2="337"/>
                         </StackLayout>
@@ -59,31 +93,47 @@
 
                     <StackLayout BackgroundColor="#50CD6273">
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="D"/>
-                            <Entry x:Name="Confirm"
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe876;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                x:Name="Confirm"
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
                                 TextColor="White" 
                                 ClearButtonVisibility="WhileEditing"
-                                Placeholder="Confirm"
+                                Placeholder="Confirm" 
                                 PlaceholderColor="White"
-                                Margin="0,0,0,-9" 
-                                WidthRequest="300"/>
+                                Margin="40,0"
+                                WidthRequest="200"/>
                         </StackLayout>
+
                         <Line BackgroundColor="White"
                             HeightRequest="3"
                             X2="337"/>
                     </StackLayout>
 
-                    <StackLayout Margin="37,15">
-                        <Button BackgroundColor="#CD6273" 
-                        TextColor="White"
-                        FontSize="20"
-                        Text="Sign up"
-                        CornerRadius="30"
-                        WidthRequest="150"
-                        HeightRequest="75"/>
+                    <StackLayout 
+                        Margin="37,15">
+                        <Button 
+                            x:Name="Sign_Up"
+                            BackgroundColor="#CD6273" 
+                            TextColor="White"
+                            FontSize="20"
+                            FontFamily="OpenSansExtraBoldFont"
+                            Text="Sign up"
+                            CornerRadius="30"
+                            WidthRequest="150"
+                            HeightRequest="75"
+                            Clicked="Sign_Up_Clicked"/>
                     </StackLayout>
                     <StackLayout>
-                        <Button FontSize="26" 
+                        <Button 
+                            FontSize="26" 
+                            FontFamily="OpenSansExtraBoldFont" 
                             BackgroundColor="#00CD6273" 
                             x:Name="Return"
                             TextColor="White" 

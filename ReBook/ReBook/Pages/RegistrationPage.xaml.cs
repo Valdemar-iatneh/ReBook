@@ -23,5 +23,10 @@ namespace ReBook.Pages
         {
             Navigation.PopAsync();
         }
+
+        private void Sign_Up_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new BooksCatalogPage());
+        }
     }
 }
