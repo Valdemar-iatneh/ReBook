@@ -24,10 +24,14 @@ namespace ReBook.Pages
 
         private async void LVBooks_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            //Review review = new Review();
+            //review.Author = "fdd";
+            //review.Comment = "fdfsadagfasg";
             Book selectedBook = (Book)e.SelectedItem;
             AboutBookPage selectedBookPage = new AboutBookPage();
             selectedBookPage.BindingContext = selectedBook;
             await Navigation.PushAsync(selectedBookPage);
+            //selectedBook.Reviews.Add(review);
         }
     }
 }

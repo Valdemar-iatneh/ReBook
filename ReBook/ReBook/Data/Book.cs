@@ -23,11 +23,14 @@ namespace ReBook.Data
         public string Author { get; set; }
         [JsonProperty("img_src")]
         public string Image { get; set; }
+
+        public List<Review> Reviews = new List<Review>();
         public UriImageSource ImagePath =>
             new UriImageSource
             {
                 Uri = new Uri($"https://book-cover.ru{Image}"),
                 CachingEnabled = true,
             };
+       
     }
 }

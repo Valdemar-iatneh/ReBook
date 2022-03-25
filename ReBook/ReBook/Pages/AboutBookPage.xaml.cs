@@ -16,5 +16,10 @@ namespace ReBook.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnAddComment_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddReviewPage());
+        }
     }
 }
