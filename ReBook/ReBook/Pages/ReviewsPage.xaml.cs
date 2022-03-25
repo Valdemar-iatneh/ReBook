@@ -20,5 +20,10 @@ namespace ReBook.Pages
             Reviews = App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id).ToList();
             BindingContext = this;
         }
+
+        private void BtnAddComment_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddReviewPage());
+        }
     }
 }
