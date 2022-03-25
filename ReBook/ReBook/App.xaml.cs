@@ -33,7 +33,7 @@ namespace ReBook
                 Deserialize.Main();
             }
 
-            MainPage = new NavigationPage(new RegistrationPage())
+            MainPage = new NavigationPage(new BooksCatalogPage())
             {
                 BarBackgroundColor = Color.FromHex("#CD6273")
             };

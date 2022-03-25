@@ -22,9 +22,12 @@ namespace ReBook.Pages
             BindingContext = this;
         }
 
-        private void LVBooks_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void LVBooks_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new Test());
+            Book selectedBook = (Book)e.SelectedItem;
+            AboutBookPage selectedBookPage = new AboutBookPage();
+            selectedBookPage.BindingContext = selectedBook;
+            await Navigation.PushAsync(selectedBookPage);
         }
     }
 }

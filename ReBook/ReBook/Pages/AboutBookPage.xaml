@@ -21,7 +21,7 @@
     <ScrollView>
         <StackLayout>
             <StackLayout x:Name="AboutBook">
-                <Image Source="logo.png" Margin="40, 28, 40, 0"/>
+                <Image Source="{Binding ImagePath}"  Margin="40, 28, 40, 0"/>
                 <StackLayout Margin="40, 20">
                     <StackLayout Orientation="Horizontal">
                         <Label Style="{StaticResource usualTextStyle}"
@@ -29,7 +29,7 @@
                             FontSize="24"/>
                         <Label Style="{StaticResource mainTextStyle}" 
                             FontSize="24"
-                            Text="Lorem ipsum"/>
+                            Text="{Binding Name}"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Style="{StaticResource usualTextStyle}" 
@@ -37,7 +37,7 @@
                             Text="Автор:"/>
                         <Label  Style="{StaticResource mainTextStyle}" 
                             FontSize="20"
-                            Text="Сунь Гихун"/>
+                             Text="{Binding Author}"/>
                     </StackLayout>
                     <StackLayout>
                         <Label  Style="{StaticResource mainTextStyle}" 
