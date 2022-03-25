@@ -15,6 +15,10 @@ namespace ReBook.Data
         public int Id { get; set; }
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        [JsonProperty("description")]
+        public string Description { get; set; }
+
         [JsonProperty("author")]
         public string Author { get; set; }
         [JsonProperty("img_src")]
