@@ -25,5 +25,15 @@ namespace ReBook.Pages
         {
             Navigation.PushAsync(new AddReviewPage());
         }
+
+        private async void UpdateView_Refreshing(object sender, EventArgs e)
+        {
+            await Task.Delay(1000);
+            UpdateList();
+        }
+        private void UpdateList()
+        {
+            LVreviews.ItemsSource = App.Db.GetReviews().Where(a => a.IdBook == BooksCatalogPage.book.Id).ToList(); ;
+        }
     }
 }
