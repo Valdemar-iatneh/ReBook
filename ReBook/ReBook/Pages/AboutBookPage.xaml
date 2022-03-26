@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls1="clr-namespace:ReBook.CustomObjects"
+    x:Class="ReBook.Pages.AboutBookPage"
+    Title="{Binding Name}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="mainTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoBoldFont"/>
+            </Style>
+            <Style x:Key="usualTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoRegularFont"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView BackgroundColor="#C0C0C0">
+        <StackLayout>
+            <StackLayout x:Name="AboutBook">
+                <Image Source="{Binding ImagePath}" Margin="40, 28, 40, 0"/>
+                <StackLayout Margin="40, 20">
+                    <StackLayout Orientation="Horizontal">
+                        <Label 
+                            WidthRequest="200"
+                            Style="{StaticResource usualTextStyle}"
+                            Text="Название:"
+                            FontSize="22"/>
+                        <Label 
+                            Margin="-90, 0, 0, 0"
+                            WidthRequest="200"
+                            Style="{StaticResource mainTextStyle}" 
+                            FontSize="25"
+                            Text="{Binding Name}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label 
+                            Style="{StaticResource usualTextStyle}" 
+                            FontSize="22"
+                            Text="Автор:"/>
+                        <Label  
+                            Style="{StaticResource mainTextStyle}" 
+                            FontSize="25"
+                            Text="{Binding Author}"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label  
+                            Style="{StaticResource mainTextStyle}" 
+                            FontSize="22"
+                            Text="О книге:"/>
+                        <Label 
+                            Style="{StaticResource usualTextStyle}" 
+                            FontSize="22"
+                            Text="{Binding Description}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label 
+                            Style="{StaticResource mainTextStyle}"
+                            FontSize="28"
+                            Text="Рейтинг:"/>
+                        <Label 
+                            Margin="8, 0, -10, 0"
+                            x:Name="Rating" 
+                            Style="{StaticResource mainTextStyle}"
+                            FontSize="28"/>
+                        <Label
+                            Margin="3"
+                            Text="&#xf099;" 
+                            TextColor="Red"
+                            FontFamily="IconFont"
+                            FontSize="30"
+                            WidthRequest="50"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#CD6273">
+                <controls1:CustomFrame
+                    CornerRadius="0, 0, 30, 30"
+                    Margin="32, 14, 32, 10"
+                    BackgroundColor="#fff">
+                    <Button 
+                        BackgroundColor="#fff"
+                        CornerRadius="1000"
+                        FontFamily="OpenSansBoldFont"
+                        FontSize="30"
+                        TextColor="#000"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Отзывы"
+                        x:Name="Reviews"
+                        Clicked="Reviews_Clicked"/>
+                </controls1:CustomFrame>
+
+                <StackLayout x:Name="AboutRabs" BackgroundColor="#CD6273"  Margin="0,10,0,0">
+                    <Button 
+                        BackgroundColor="#CD6273"
+                        FontFamily="RobotoRegularFont"
+                        FontSize="18"
+                        TextColor="#fff"
+                        Margin="15"
+                        Clicked="Button_Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="© DreamTeam"
+                        CornerRadius="30"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage> 

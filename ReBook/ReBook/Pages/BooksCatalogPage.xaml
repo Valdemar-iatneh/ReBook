@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReBook.Pages.BooksCatalogPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label 
+                Text="Каталог" 
+                FontFamily="RobotoRegularFont" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="22"
+                TextColor="White"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout Padding="0" BackgroundColor="#C0C0C0">
+            <ListView x:Name="LVBooks"
+                      ItemsSource="{Binding Books}"
+                      HasUnevenRows="True" 
+                      ItemSelected="LVBooks_ItemSelected" 
+                      HeightRequest="340">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame Margin="60, 20">
+                                    <StackLayout Margin="0" Padding="0" HeightRequest="370">
+                                        <StackLayout Padding="0">
+                                            <Image Source="{Binding ImagePath}" HeightRequest="300" VerticalOptions="Center"/>
+                                            <Label Text="{Binding Name}" 
+                                                   FontFamily="RobotoRegularFont"
+                                                   FontSize="18" 
+                                                   TextColor="Black"
+                                                   Margin="35,0,10,10"/>
+                                            <Label Text="{Binding Author}"
+                                                   FontFamily="RobotoRegularFont"
+                                                   FontSize="16" 
+                                                   Margin="35,-18,10,10"
+                                                   TextColor="Gray"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

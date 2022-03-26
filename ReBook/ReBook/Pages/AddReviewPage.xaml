@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReBook.Pages.AddReviewPage"
+             xmlns:controls1="clr-namespace:ReBook.CustomObjects">
+    <ContentPage.Content>
+        <StackLayout x:Name="AddReview" BackgroundColor="#CD6273"  Margin="0, -6">
+            <controls1:CustomFrame
+                    CornerRadius="0, 30, 30, 30"
+                    Margin="32, 14, 32, 0"
+                    BackgroundColor="#fff">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry 
+                            x:Name="AuthorName" 
+                            Placeholder="Имя Автора"
+                            HorizontalOptions="StartAndExpand"
+                            WidthRequest="200"
+                            Margin="25,0,0,0"
+                            FontFamily="RobotoBoldFont"/>
+                        <Button 
+                            HorizontalOptions="End"
+                            x:Name="BtnAddComment"
+                            FontFamily="IconFont"
+                            Text="&#xe5c8;"
+                            WidthRequest="50"
+                            BackgroundColor="#CD6273"
+                            FontSize="30"
+                            TextColor="White"
+                            CornerRadius="500"
+                            Clicked="BtnAddComment_Clicked"/>
+                    </StackLayout>
+                    <Editor 
+                        x:Name="Comment" 
+                        Placeholder="Отзыв"
+                        HorizontalOptions="StartAndExpand"
+                        WidthRequest="200"
+                        HeightRequest="400"
+                        Margin="25,0,0,0"
+                        FontFamily="RobotoRegularFont"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Button 
+                            x:Name="Rank1" 
+                            Text="&#xf099;" 
+                            TextColor="Gray"
+                            FontFamily="IconFont"
+                            FontSize="30"
+                            WidthRequest="50"
+                            BackgroundColor="white"
+                            Clicked="Rank1_Clicked"/>
+                        <Button 
+                            x:Name="Rank2" 
+                            Text="&#xf099;" 
+                            TextColor="Gray"
+                            FontFamily="IconFont"
+                            FontSize="30"
+                            WidthRequest="50"
+                            BackgroundColor="white"
+                            Clicked="Rank2_Clicked"/>
+                        <Button 
+                            x:Name="Rank3" 
+                            Text="&#xf099;" 
+                            TextColor="Gray"
+                            FontFamily="IconFont"
+                            FontSize="30"
+                            WidthRequest="50"
+                            BackgroundColor="white"
+                            Clicked="Rank3_Clicked"/>
+                        <Button 
+                            x:Name="Rank4" 
+                            Text="&#xf099;" 
+                            TextColor="Gray"
+                            FontFamily="IconFont"
+                            FontSize="30"
+                            WidthRequest="50"
+                            Clicked="Rank4_Clicked"
+                            BackgroundColor="white"/>
+                        <Button 
+                            x:Name="Rank5" 
+                            Text="&#xf099;" 
+                            TextColor="Gray"
+                            FontFamily="IconFont"
+                            FontSize="30"
+                            WidthRequest="50"
+                            BackgroundColor="white"
+                            Clicked="Rank5_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </controls1:CustomFrame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

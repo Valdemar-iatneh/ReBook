@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReBook.Pages.RegistrationPage"
+             BackgroundImageSource="background.png"
+             BackgroundColor="#000000">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Margin="89,28" Source="logo.png"/>
+                <StackLayout VerticalOptions="Center" Margin="37,0">
+
+                    <StackLayout  BackgroundColor="#50CD6273">
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe8a6;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                x:Name="Name" 
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
+                                TextColor="White" 
+                                ClearButtonVisibility="WhileEditing"
+                                Placeholder="Name"
+                                PlaceholderColor="White"
+                                Margin="40,0"
+                                WidthRequest="200"/>
+                        </StackLayout>
+
+                        <Line 
+                            BackgroundColor="White"
+                            HeightRequest="3"
+                            X2="337"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe853;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                x:Name="Login" 
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
+                                TextColor="White" 
+                                ClearButtonVisibility="WhileEditing"
+                                Placeholder="Login"
+                                PlaceholderColor="White"
+                                Margin="40,0"
+                                WidthRequest="200"/>
+                        </StackLayout>
+
+                        <Line 
+                            BackgroundColor="White"
+                            HeightRequest="3"
+                            X2="337"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe897;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                IsPassword="true"
+                                x:Name="Password" 
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
+                                TextColor="White" 
+                                ClearButtonVisibility="WhileEditing"
+                                Placeholder="Password" 
+                                PlaceholderColor="White"
+                                Margin="40,0"
+                                WidthRequest="200"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Line 
+                                BackgroundColor="White"
+                                HeightRequest="3"
+                                X2="337"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe876;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                x:Name="Confirm"
+                                FontFamily="OpenSansExtraBoldFont"
+                                FontSize="26"
+                                TextColor="White" 
+                                ClearButtonVisibility="WhileEditing"
+                                Placeholder="Confirm" 
+                                PlaceholderColor="White"
+                                Margin="40,0"
+                                WidthRequest="200"/>
+                        </StackLayout>
+
+                        <Line BackgroundColor="White"
+                            HeightRequest="3"
+                            X2="337"/>
+                    </StackLayout>
+
+                    <StackLayout 
+                        Margin="37,15">
+                        <Button 
+                            x:Name="Sign_Up"
+                            BackgroundColor="#CD6273" 
+                            TextColor="White"
+                            FontSize="20"
+                            FontFamily="OpenSansExtraBoldFont"
+                            Text="Sign up"
+                            CornerRadius="30"
+                            WidthRequest="150"
+                            HeightRequest="75"
+                            Clicked="Sign_Up_Clicked"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button 
+                            FontSize="26" 
+                            FontFamily="OpenSansExtraBoldFont" 
+                            BackgroundColor="#00CD6273" 
+                            x:Name="Return"
+                            TextColor="White" 
+                            HorizontalOptions="Center" 
+                            Padding="0,0,0,25"
+                            Text="Return to back"
+                            Clicked="Return_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage> 

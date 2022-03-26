@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls1="clr-namespace:ReBook.CustomObjects"
+             x:Class="ReBook.Pages.ReviewsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="mainTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoBoldFont"/>
+            </Style>
+            <Style x:Key="usualTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontFamily" Value="RobotoRegularFont"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView 
+                x:Name="LVreviews"
+                ItemsSource="{Binding Reviews}"
+                HasUnevenRows="True"  
+                HeightRequest="300">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <controls1:CustomFrame x:Name="Review1" 
+                                    BackgroundColor="#ADDCA9"           
+                                    Margin="40, 20"
+                                    CornerRadius="0, 30, 30, 30">
+                                    <StackLayout Margin="-20">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="logo.png"
+                                                WidthRequest="70"
+                                                HeightRequest="70"
+                                                Margin="24, 18"/>
+                                            <Label 
+                                                Text="{Binding Author}" 
+                                                Style="{StaticResource mainTextStyle}" 
+                                                FontSize="22" 
+                                                VerticalOptions="Center"/>
+                                        </StackLayout>
+                                        <Label 
+                                            Text="{Binding Comment}"
+                                            Style="{StaticResource usualTextStyle}"
+                                            FontSize="16" 
+                                            Margin="25, 0"/>
+                                        <StackLayout Orientation="Horizontal" Margin="24, 21">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label TextColor="Yellow" 
+                                                    FontFamily="IconFont"
+                                                    FontSize="30"
+                                                    Text="&#xf09a;"/>
+                                                <Label 
+                                                    Text="{Binding Rank}"
+                                                    Style="{StaticResource usualTextStyle}"
+                                                    HorizontalOptions="Center"
+                                                    FontSize="22"/>
+                                            </StackLayout>
+                                            <Label Style="{StaticResource mainTextStyle}"
+                                                FontSize="14"
+                                                VerticalOptions="Center"
+                                                Margin="120, 0, 0, 0"
+                                                Text="27.03.2022"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </controls1:CustomFrame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <RelativeLayout
+                BackgroundColor="#CD6273"
+                HeightRequest="10"
+                Margin="0, 0, 0, 0">
+                <controls1:CustomFrame
+                    CornerRadius="0, 30, 30, 30"
+                    Margin="32, 14, 32, 10"
+                    WidthRequest="300"
+                    BackgroundColor="#fff">
+                    <Button 
+                        x:Name="BtnAddComment"
+                        Margin="0, -10"
+                        BackgroundColor="White"
+                        CornerRadius="500"
+                        TextColor="#50000000" 
+                        FontFamily="RobotoRegularFont"
+                        Text="Добавить отзыв ..."
+                        Clicked="BtnAddComment_Clicked"/>
+                </controls1:CustomFrame>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

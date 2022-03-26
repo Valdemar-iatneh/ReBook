@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReBook.Pages.AuthorizationPage"
+             BackgroundImageSource="background.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Margin="37,28" Source="logo.png"/>
+                <StackLayout VerticalOptions="Center" Margin="37,0">
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe8a6;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry
+                                FontFamily="OpenSansBoldFont"
+                                FontSize="25"
+                                x:Name="Login"
+                                TextColor="White" 
+                                ClearButtonVisibility="WhileEditing"
+                                Placeholder="Login"
+                                PlaceholderColor="White"
+                                Margin="40,0"
+                                WidthRequest="200"/>
+
+                        </StackLayout>
+                        <Line 
+                            BackgroundColor="White"
+                            HeightRequest="3"
+                            X2="337"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#50CD6273">
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                FontFamily="IconFont" 
+                                Text="&#xe897;"
+                                TextColor="White"
+                                FontSize="40"
+                                Margin="15,10,0,0"/>
+                            <Entry 
+                                FontFamily="OpenSansBoldFont"
+                                FontSize="25"
+                                IsPassword="true"
+                                x:Name="Password" 
+                                TextColor="White" 
+                                ClearButtonVisibility="WhileEditing"
+                                Placeholder="Password" 
+                                PlaceholderColor="White"
+                                Margin="40,0"
+                                WidthRequest="200"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Line BackgroundColor="White"
+                        HeightRequest="3"
+                        X2="337"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Margin="37,0">
+                    <Button 
+                        FontFamily="OpenSansExtraBoldFont"
+                        BackgroundColor="#CD6273" 
+                        TextColor="White"  
+                        Text="Sign in"
+                        x:Name="Sign_In"
+                        FontSize="20"
+                        CornerRadius="30"
+                        WidthRequest="150"
+                        HeightRequest="75"
+                        Clicked="Sign_In_Clicked"
+                        Margin="0,20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Button 
+                    FontFamily="OpenSansExtraBoldFont"
+                    FontSize="26" 
+                    TextColor="White" 
+                    HorizontalOptions="Center"
+                    x:Name="RefBtn"
+                    Text="Registration"
+                    BackgroundColor="#00CD6273"
+                    Clicked="RefBtn_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
